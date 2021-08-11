@@ -2,7 +2,7 @@
 Musala Soft Gateways Task
 
 
-#Backend Installation
+# Backend Installation
 
 - Open Solution -> AppSettings.json -> change connection string to sql server of your machine
 - Right Click On BackendCore.Api project -> build tap -> select (BackendCore.Api) from pofile drop down and (Project) from Launch drop down
@@ -11,7 +11,7 @@ Musala Soft Gateways Task
 - to test from swagger use (username: admin , password:123456) to login and use token to test the apis
 
 
-#Frontend Installation
+# Frontend Installation
 
 - open project source folder
 - open terminal in root directory
