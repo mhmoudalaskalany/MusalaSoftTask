@@ -1,0 +1,17 @@
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\BackendCore.Data.deps.json
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\BackendCore.Data.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\ref\BackendCore.Data.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\BackendCore.Data.pdb
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\BackendCore.Common.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\BackendCore.Entities.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\BackendCore.Common.pdb
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\bin\Debug\net5.0\BackendCore.Entities.pdb
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.csproj.AssemblyReference.cache
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.AssemblyInfoInputs.cache
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.AssemblyInfo.cs
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.csproj.CoreCompileInputs.cache
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.csproj.CopyComplete
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\ref\BackendCore.Data.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Data\obj\Debug\net5.0\BackendCore.Data.pdb

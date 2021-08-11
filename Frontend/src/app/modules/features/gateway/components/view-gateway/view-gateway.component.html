@@ -1,0 +1,68 @@
+<div class="card border-0 mb-5">
+  <div class="card-title  p-3 d-flex justify-content-between align-items-center">
+    <div class="mt-3">
+
+      <h2 class="text-gradient-primary font-26">{{ 'Data.Gateway' |
+        translate
+        }}</h2>
+    </div>
+    <div>
+      <button type="button" role="button" class="btn btn-gradient-dark btn-lg" (click)="Redirect()">{{
+        'Action.Back' |translate }}</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-body">
+
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="font-26 text-gradient-primary">
+          Gateway Details
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>
+          Name : {{ model.name}}
+        </h2>
+      </div>
+      <div class="col-md-4">
+        <h2>
+          IP : {{ model.ip }}
+        </h2>
+
+
+      </div>
+      <div class="col-md-4">
+        <h2>
+          Serial Number : {{ model.serialNumber }}
+        </h2>
+
+
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-md-4">
+        <h2 class="font-26 text-gradient-primary">Devices</h2>
+      </div>
+    </div>
+    <div class="row mt-2" *ngFor="let device of model.devices">
+      <div class="col-md-4">
+        <h2>Vendor : {{ device.vendor}}</h2>
+      </div>
+      <div class="col-md-4">
+        <h2>Status : {{ device.status == 1 ? 'Online' : 'Offline'}}</h2>
+      </div>
+      <div class="col-md-4">
+        <h2>Creation Date : {{ device.createdDate | date :'short'}}</h2>
+      </div>
+    </div>
+
+
+  </div>
+</div>

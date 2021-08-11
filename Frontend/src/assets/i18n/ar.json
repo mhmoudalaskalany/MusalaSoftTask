@@ -1,0 +1,43 @@
+{
+  "TITLE": "Gateway Management System",
+  "HOME": {},
+  "Data": {
+    "Gateways": "البوابات",
+    "Home": "الرئيسية",
+    "Devices": "الأجهزة",
+    "Users": "المستخدمين",
+    "Gateway": "بوابة",
+    "CreatedDate": "تاريخ الإنشاء",
+    "Online": "متصل",
+    "Offline": "خارج الخدمة",
+    "IP": " IP عنوان",
+    "SerialNumber": "الرقم التسلسلى",
+    "Name": "الاسم",
+    "Actions": "خيارات",
+    "DeleteMessage": "هل تريد الحذف ؟",
+    "DeleteConfirmation": "تأكيد الحذف",
+    "Yes": "نعم",
+    "No": "لا",
+    "DeleteSuccess": "تم الحذف بنجاح",
+    "DeleteError": "خطأ ف الحذف",
+    "AddSuccess": "تم الاضافة بنجاح",
+    "AddError": "خطأ ف الاضافة",
+    "UpdateSuccess": "تم التعديل بنجاح",
+    "UpdateError": "خطأ ف التعديل"
+  },
+  "Common": {
+    "Name": "الاسم",
+    "Language": "اللغة"
+  },
+  "Action": {
+    "Add": "اضافة",
+    "Close": "إغلاق",
+    "Process": "معالجة",
+    "View": "عرض",
+    "Edit": "تعديل",
+    "Delete": "حذف",
+    "Back": "عودة",
+    "Cancel": "الغاء",
+    "Save": "حفظ"
+  }
+}

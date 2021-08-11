@@ -1,0 +1,43 @@
+{
+  "TITLE": "Gateway Management System",
+  "HOME": {},
+  "Data": {
+    "Gateways": "Gateways",
+    "Home": "Home",
+    "Devices": "Devices",
+    "Users": "Users",
+    "Gateway": "Gateway",
+    "CreatedDate": "CreatedDate",
+    "Online": "Online",
+    "Offline": "Offline",
+    "IP": "IP",
+    "SerialNumber": "Serial Number",
+    "Name": "Name",
+    "Actions": "Actions",
+    "DeleteMessage": "Are You Sure You Want To Delete ?",
+    "DeleteConfirmation": "Delete Confirmation",
+    "Yes": "Yes",
+    "No": "No",
+    "DeleteSuccess": "Deleted Successfully",
+    "DeleteError": "Error In Deleting",
+    "AddSuccess": "Added Successfully",
+    "AddError": "Error In Adding",
+    "UpdateSuccess": "Updated Successfully",
+    "UpdateError": "Error In Updating"
+  },
+  "Common": {
+    "Name": "Name",
+    "Language": "Language"
+  },
+  "Action": {
+    "Add": "Add",
+    "Close": "Close",
+    "Process": "Process",
+    "View": "View",
+    "Edit": "Edit",
+    "Delete": "Delete",
+    "Back": "Back",
+    "Cancel": "Cancel",
+    "Save": "Save"
+  }
+}

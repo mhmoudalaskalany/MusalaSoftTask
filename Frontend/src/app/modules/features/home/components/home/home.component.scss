@@ -1,0 +1,54 @@
+.item-card {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  box-shadow: 8px 8px 8px rgb(230, 230, 230) !important;
+  position: relative;
+  transition: all 0.3s ease-in;
+  height: 150px;
+}
+
+.item-card:hover {
+  transform: scale(1.1);
+}
+
+.item-card .card-icon {
+  margin-bottom: 15px;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(to right, #6a008a, #fe7096);
+}
+.bg-gradient-info {
+  background: linear-gradient(to right, #90caf9, #047edf 99%);
+}
+.bg-gradient-success {
+  background: linear-gradient(to right, #84d9d2, #07cdae);
+}
+.bg-gradient-primary {
+  background: linear-gradient(to right, #da8cff, #9a55ff);
+}
+.bg-gradient-warning {
+  background: linear-gradient(to right, #f6e384, #fe7096);
+}
+.bg-gradient-secondary {
+  background: linear-gradient(to right, #fe7096, #9a55ff);
+}
+
+.card-title {
+  font-size: 1.3rem !important;
+}
+.card-icon {
+  font-size: 4rem !important;
+}
+
+.list-item {
+  font-size: 1.2rem !important;
+}

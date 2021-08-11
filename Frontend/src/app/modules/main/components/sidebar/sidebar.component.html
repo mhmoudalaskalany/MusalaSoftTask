@@ -1,0 +1,38 @@
+<div class="sidebar">
+  <div class="logo mb-3 text-center">
+    <h1 class="font-24 font-weight-bold text-gradient-primary">{{ 'TITLE' | translate}}</h1>
+  </div>
+
+  <div class="brand mb-3 d-flex align-items-center justify-content-center">
+    <div class="brand-img">
+      <img src="assets/images/biglogo.png" alt="">
+    </div>
+  </div>
+
+  <div class="sidebar-nav">
+    <ul>
+      <li>
+        <a routerLink="/main/home" routerLinkActive="active" class="d-flex align-items-center parent">
+          <span>
+            <i class='bx bxs-home text-gradient-primary'></i>
+          </span>
+          <span class="nav-link">{{ 'Data.Home' | translate}}</span>
+
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/main/gateway" routerLinkActive="active" class="d-flex align-items-center parent">
+          <span>
+            <i class='bx bx-broadcast  text-gradient-primary'></i>
+          </span>
+          <span class="nav-link">{{ 'Data.Gateways' | translate}}</span>
+
+        </a>
+      </li>
+
+
+
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\bin\Debug\net5.0\BackendCore.Entities.deps.json
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\bin\Debug\net5.0\BackendCore.Entities.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\bin\Debug\net5.0\ref\BackendCore.Entities.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\bin\Debug\net5.0\BackendCore.Entities.pdb
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\BackendCore.Entities.csproj.AssemblyReference.cache
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\BackendCore.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\BackendCore.Entities.AssemblyInfoInputs.cache
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\BackendCore.Entities.AssemblyInfo.cs
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\BackendCore.Entities.csproj.CoreCompileInputs.cache
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\BackendCore.Entities.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\ref\BackendCore.Entities.dll
+C:\My Work\My Repos\Backend\MusalaSoft\Backend\BackendCore.Entities\obj\Debug\net5.0\BackendCore.Entities.pdb

@@ -1,0 +1,184 @@
+<div class="card border-0 mb-5">
+  <div class="card-title  p-3 d-flex justify-content-between align-items-center">
+    <div class="mt-3">
+      <h2 *ngIf="isNew" class="text-gradient-primary font-26">{{ 'Action.Add' | translate}} {{ 'Data.Gateway' |
+        translate
+        }}</h2>
+      <h2 *ngIf="!isNew" class="text-gradient-primary font-26">{{ 'Action.Edit' | translate}} {{ 'Data.Gateway' |
+        translate
+        }}</h2>
+    </div>
+    <div>
+      <button type="button" role="button" class="btn btn-gradient-dark btn-lg" (click)="Redirect()">{{
+        'Action.Back' |translate }}</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-body">
+    <form name="form" (ngSubmit)="Submit()" [formGroup]="form" novalidate>
+      <div class="row">
+
+        <!-- Unique Serial Number -->
+        <div class="col-md-4">
+          <div class="form-group bg-white p-3 d-flex flex-column m-0">
+            <mat-form-field class="text-start transparent">
+              <mat-label [attr.for]="'serialNumber'" class="text-middle font-16">{{ 'Unique Serial Number' }}
+              </mat-label>
+
+              <input matInput id="serialNumber" formControlName="serialNumber" type="text">
+
+              <mat-error *ngIf="form?.get('serialNumber')?.errors && form?.get('serialNumber')?.touched">
+                <span class="font-12">{{ form?.get('serialNumber')?.errors | validationHandler
+                  }}</span>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <!-- Gateway Name -->
+        <div class="col-md-4">
+          <div class="form-group bg-white p-3 d-flex flex-column m-0">
+            <mat-form-field class="text-start transparent">
+              <mat-label [attr.for]="'name'" class="text-middle font-16">{{ 'Gateway Name' }}
+              </mat-label>
+
+              <input matInput id="name" formControlName="name" type="text">
+
+              <mat-error *ngIf="form.get('name')?.errors && form.get('name')?.touched">
+                <span class="font-12">{{ form.get('name')?.errors | validationHandler
+                  }}</span>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <!-- IPv4 -->
+        <div class="col-md-4">
+          <div class="form-group bg-white p-3 d-flex flex-column m-0">
+            <mat-form-field class="text-start transparent">
+              <mat-label [attr.for]="'ip'" class="text-middle font-16">{{ 'IPv4 Address' }}</mat-label>
+
+              <input matInput id="ip" formControlName="ip" type="text"
+                pattern="(?:(?:^|\.)(?:2(?:5[0-5]|[0-4]\d)|1?\d?\d)){4}$" (keydown)="allowNumbersOnly($event)">
+
+              <mat-error *ngIf="form.get('ip')?.errors && form.get('ip')?.touched">
+                <span class="font-12">{{ form.get('ip')?.errors | validationHandler }}</span>
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- devices label -->
+      <div class="d-flex align-items-center w-100">
+        <label for="devices" class="text-middle font-18 mx-3 text-capitalize my-4 w-100">{{ 'Gateway Devices'
+          }}</label>
+
+        <button class="btn btn-gradient-primary font-14 border p-1 m-inline-start-3" type="button" mat-flat-button
+          [disabled]="gatewayDevices.controls.length > 9" (click)="initDeviceForm()">
+          <i class="bx bx-plus text-gradient-white"></i>
+        </button>
+      </div>
+
+
+      <ng-container>
+        <!-- devices form -->
+        <div class="d-flex align-items-startw-100 devices" [ngClass]="{'mt-3': i > 0}" formArrayName="devices"
+          *ngFor="let device of gatewayDevices.controls; let i=index">
+          <form class="w-100" [formGroupName]="i">
+            <app-collapse [title]="'Device ' + (i +1)">
+              <div class="device">
+                <div class="row">
+                  <div class="col-md-4">
+                    <!-- vendor -->
+                    <div class="form-group p-3 pt-0 d-flex flex-column m-0">
+                      <mat-form-field class="text-start transparent">
+                        <mat-label [attr.for]="'vendor'" class="text-middle font-16">{{ 'Vendor' }}
+                        </mat-label>
+
+                        <input matInput id="vendor" formControlName="vendor" type="text">
+
+                        <mat-error *ngIf="device?.get('vendor')?.errors && device?.get('vendor')?.touched">
+                          <span class="font-12">{{ device?.get('vendor')?.errors | validationHandler
+                            }}</span>
+                        </mat-error>
+                      </mat-form-field>
+                    </div>
+                  </div>
+
+                  <div class="col-4">
+                    <div class="form-group p-3 pt-0 d-flex flex-column m-0">
+                      <mat-form-field class="w-100 text-start">
+                        <mat-label>{{ 'Data.CreatedDate' | translate }}</mat-label>
+                        <input matInput [matDatepicker]="createdDate" (keydown)="preventDefault($event)"
+                          formControlName='createdDate'
+                          (dateChange)="device?.get('createdDate').setValue(moment($event.value['_d']).format())">
+                        <mat-datepicker-toggle matSuffix [for]=" createdDate">
+                          <svg matDatepickerToggleIcon xmlns="http://www.w3.org/2000/svg" fill="none" width="20"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        </mat-datepicker-toggle>
+                        <mat-datepicker #createdDate color="primary"></mat-datepicker>
+                      </mat-form-field>
+
+                      <mat-error *ngIf="device?.get('createdDate')?.errors && device?.get('createdDate')?.touched">
+                        <span class="font-12">{{ device?.get('createdDate')?.errors | validationHandler
+                          }}</span>
+                      </mat-error>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group p-3 pt-0 d-flex flex-column m-0">
+                      <!-- status -->
+                      <div class="form-group p-3 pt-0 d-flex  align-items-center justify-content-around m-0">
+                        <label for="setting-status" class="text-middle mb-2 font-16 font-weight-bold d-flex">{{ 'Status'
+                          }}</label>
+
+                        <mat-radio-group class="status-radio-group" formControlName="status">
+                          <mat-radio-button class="status-radio-button" [value]="1">
+                            {{ 'Data.Online' | translate}}
+                          </mat-radio-button>
+                          <mat-radio-button class="status-radio-button" [value]="2">
+                            {{ 'Data.Offline' | translate}}
+                          </mat-radio-button>
+                        </mat-radio-group>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </app-collapse>
+          </form>
+
+          <a class="p-3 cursor-pointer m-inline-start-3 z-index mt-3" *ngIf="i >= 0"
+            (click)="gatewayDevices.removeAt(i)" title="Remove Device">
+            <i class="bx bx-trash-alt font-20 text-gradient-danger"></i>
+          </a>
+        </div>
+      </ng-container>
+
+
+
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-lg btn-gradient-primary w-25 mx-2" [disabled]="form.invalid">{{
+          'Action.Save' | translate
+          }}</button>
+        <button class="btn btn-lg btn-gradient-dark w-25" (click)="Redirect()">{{ 'Action.Cancel' | translate
+          }}</button>
+      </div>
+    </form>
+  </div>
+</div>

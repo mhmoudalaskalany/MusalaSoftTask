@@ -1,0 +1,7 @@
+{
+  "HOST_API": "https://localhost:5001/api/",
+  "API": {
+    "GET-GATEWAY": "https://localhost:5001/api/Gateways/GetPaged",
+    "DELETE-GATEWAY": "https://localhost:5001/api/Gateways/DeleteSoft"
+  }
+}
