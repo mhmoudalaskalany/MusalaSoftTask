@@ -4,7 +4,7 @@ Musala Soft Gateways Task
 
 # Backend Installation
 
-- Open Solution -> AppSettings.json -> change connection string to sql server of your machine
+- Open Solution -> got to BackendCore.Api project -> AppSettings.json -> change connection string to sql server of your machine
 - Right Click On BackendCore.Api project -> build tap -> select (BackendCore.Api) from pofile drop down and (Project) from Launch drop down
 - this will run the api on https://localhost:5001
 - after starting the application the database will be created automatically using migrations
