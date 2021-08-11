@@ -18,5 +18,6 @@ Musala Soft Gateways Task
 - run npm install
 - go to assets -> config -> development.json
 - change HOST_API to the url the backend is running on
+- use (username:admin , password:123456) to login and start using the system
 
 
